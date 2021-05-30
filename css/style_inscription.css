@@ -1,0 +1,156 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.border-md {
+	border-width: 2px;
+}
+
+.btn-facebook {
+	background: #405d9d;
+	border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+	background: #314879;
+}
+
+.btn-twitter {
+	background: #42aeec;
+	border: none;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+	background: #1799e4;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+	min-height: 100vh;
+}
+
+.form-control:not(select) {
+	padding: 1rem 0.5rem;
+}
+
+select.form-control {
+	height: 60px;
+	padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+	color: #ccc;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+
+/*
+*
+* ==========================================
+* Boutton retour
+* ==========================================
+*
+*/
+
+.btn-hover-effect {
+	display: flex;
+	font-family: Arial;
+	font-size: 17px;
+	background-color: black;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+/* effects styles !!!YOU NEED THEM */
+/* don't forget to add your own background-color and text color */
+.btn-hover-effect {
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 17px 31px;
+	transform: translateZ(0);
+	text-decoration: none;
+	overflow: hidden;
+}
+
+/* effect #5 */
+.btn-hover-effect--effect-5 {
+	/* overlay styles */
+	/* icon styles */
+}
+.btn-hover-effect--effect-5:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition-property: transform;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+	display: block;
+	width: 300px;
+	height: 300px;
+	content: "";
+	transform: translate(-50%, -50%) scale(0);
+	transform-origin: center center;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	z-index: -1;
+}
+.btn-hover-effect--effect-5:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: transform 0.2s linear 0.2s, opacity 0.2s linear 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 300px;
+	content: "\f177";
+	font-family: "FontAwesome";
+	font-size: 30px;
+	font-weight: 900;
+	line-height: inherit;
+	color: transparent;
+	transform: translate(-50%, -50%) scale(0);
+	transform-origin: center center;
+	background-color: #c0392b;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: -1;
+}
+.btn-hover-effect--effect-5:hover {
+	color: transparent;
+}
+.btn-hover-effect--effect-5:hover:before {
+	transition-duration: 0.15s;
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+.btn-hover-effect--effect-5:hover:after {
+	transition-duration: 0.15s;
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+	color: white;
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./scss/bootstrap.min.css" />
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="./css/font-awesome.min.css" />
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./css/style_index.css" />
+		<link rel="stylesheet" href="./css/style_publier.css" />
+
+		<title>OnzeProd</title>
+	</head>
+
+	<body>
+		<header class="main-header">
+			<nav class="navbar navbar-expand bg-dark d-flex main-nav px-3">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"> OnzeProd </a>
+					<div id="mainMenu">
+						<ul class="navbar-nav ml-auto text-uppercase f1">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+							<li class="dropdown">
+								<a
+									class="dropdown-toggle"
+									href="#"
+									id="navbarDropdownMenuLink"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Categories
+								</a>
+								<ul
+									class="dropdown-menu bg-dark"
+									aria-labelledby="navbarDropdownMenuLink"
+								>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Action</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Another action</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Something else here</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" class="active"
+									>Publier votre instru</a
+								>
+							</li>
+							<li>
+								<a href="#">projects</a>
+							</li>
+						</ul>
+					</div>
+					<a href="./connexion.html" class="btn">
+						<strong class="btn-text">CONNEXION</strong>
+					</a>
+				</div>
+			</nav>
+			<!-- /.container -->
+		</header>
+
+		<div class="container-fluid px-0">
+			<div class="row justify-content-center mx-0 px-0">
+				<div class="col-lg-6 col-xl-7 bg-dark">
+					<div class="input-group mb-3">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Recipient's username"
+							aria-label="Recipient's username"
+							aria-describedby="basic-addon2"
+						/>
+						<span class="input-group-text" id="basic-addon2"
+							>@example.com</span
+						>
+					</div>
+				</div>
+				<div
+					class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 px-5 mb-2"
+				>
+					<div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+						<h2 class="text-danger fw-bold">Publiez votre prod</h2>
+						<p>
+							Prière de remplir tous les champs avant de passer à
+							l'étape suivante
+						</p>
+						<form id="msform" class="row justify-content-center">
+							<!-- progressbar -->
+							<ul id="progressbar">
+								<li class="active" id="account">
+									<strong>Informations</strong>
+								</li>
+								<li id="personal">
+									<strong>Fichier audio</strong>
+								</li>
+								<li id="payment"><strong>Cover</strong></li>
+								<li id="confirm"><strong>Terminé</strong></li>
+							</ul>
+							<div class="progress mx-0 px-0 mb-3">
+								<div
+									class="progress-bar progress-bar-striped progress-bar-animated"
+									role="progressbar"
+									aria-valuemin="0"
+									aria-valuemax="100"
+								></div>
+							</div>
+							<!-- fieldsets -->
+							<fieldset>
+								<div class="form-card mb-4">
+									<div class="row mt-4 mb-3">
+										<div class="col-7">
+											<h2 class="fs-title">
+												Informations sur la prod:
+											</h2>
+										</div>
+										<div class="col-5">
+											<h2 class="steps">Etape 1 - 4</h2>
+										</div>
+									</div>
+									<div class="row">
+										<div class="row px-0 mx-0">
+											<div class="input-group col mb-3">
+												<span
+													class="input-group-text bg-dark text-white fw-bold"
+													id="basic-addon1"
+													>Nom</span
+												>
+												<input
+													type="text"
+													class="form-control"
+													required
+												/>
+											</div>
+										</div>
+										<div class="row px-0 mx-0">
+											<div class="input-group col mb-3">
+												<span
+													class="input-group-text bg-dark text-white fw-bold"
+													id="basic-addon1"
+													>Style</span
+												>
+												<input
+													type="text"
+													class="form-control"
+													list="style"
+													required
+												/>
+												<datalist id="style">
+													<option
+														value="BoomBap"
+													></option>
+													<option
+														value="Drill"
+													></option>
+													<option
+														value="Hip-Hop"
+													></option>
+													<option
+														value="Rap"
+													></option>
+													<option
+														value="Trap"
+													></option>
+												</datalist>
+											</div>
+
+											<div
+												class="input-group mb-3 col-lg"
+											>
+												<span
+													class="input-group-text bg-dark text-white fw-bold"
+													>Tempo</span
+												>
+												<input
+													type="number"
+													class="form-control"
+													required
+												/>
+												<span class="input-group-text"
+													>BPM</span
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input
+									type="button"
+									name="next"
+									class="next action-button"
+									value="Suivant"
+								/>
+							</fieldset>
+							<fieldset>
+								<div class="form-card mb-4">
+									<div class="row mt-4 mb-3">
+										<div class="col-7">
+											<h2 class="fs-title">
+												Charger le fichier audio:
+											</h2>
+										</div>
+										<div class="col-5">
+											<h2 class="steps">Etape 2 - 4</h2>
+										</div>
+									</div>
+									<div class="input-group mb-3">
+										<label
+											class="input-group-text bg-dark text-white fw-bold"
+											for="inputGroupFile01"
+											>MP3</label
+										>
+										<input
+											accept=".mp3"
+											type="file"
+											class="form-control"
+											id="inputGroupFile01"
+											required
+										/>
+									</div>
+								</div>
+								<input
+									type="button"
+									name="next"
+									class="next action-button"
+									value="Suivant"
+								/>
+								<input
+									type="button"
+									name="previous"
+									class="previous action-button-previous"
+									value="Précédent"
+								/>
+							</fieldset>
+							<fieldset>
+								<div class="form-card">
+									<div class="row">
+										<div class="col-7">
+											<h2 class="fs-title">
+												Charger la pochette:
+											</h2>
+										</div>
+										<div class="col-5">
+											<h2 class="steps">Etape 3 - 4</h2>
+										</div>
+									</div>
+									<div class="input-group mb-3">
+										<label
+											class="input-group-text bg-dark text-white fw-bold"
+											for="inputGroupFile01"
+											>Image</label
+										>
+										<input
+											accept="image/jpeg, image/png"
+											type="file"
+											class="form-control"
+											id="inputGroupFile01"
+											required
+										/>
+									</div>
+								</div>
+								<input
+									type="button"
+									name="next"
+									class="next action-button"
+									value="Publier"
+								/>
+								<input
+									type="button"
+									name="previous"
+									class="previous action-button-previous"
+									value="Précédent"
+								/>
+							</fieldset>
+							<fieldset>
+								<div class="form-card">
+									<div class="row">
+										<div class="col-7">
+											<h2 class="fs-title">Terminé:</h2>
+										</div>
+										<div class="col-5">
+											<h2 class="steps">Etape 4 - 4</h2>
+										</div>
+									</div>
+									<br /><br />
+									<h2 class="text-danger text-center">
+										<strong>SUCCES !</strong>
+									</h2>
+									<br />
+									<div class="row justify-content-center">
+										<div class="col-3">
+											<img
+												src="https://i.imgur.com/GwStPmg.png"
+												class="fit-image"
+											/>
+										</div>
+									</div>
+									<br /><br />
+									<div class="row justify-content-center">
+										<div class="col-7 text-center">
+											<h5 class="text-danger text-center">
+												Votre prod a été publiée avec
+												succès
+											</h5>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<!-- JQuerry -->
+		<script src="./js/jquery-3.6.0.min.js"></script>
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var current_fs, next_fs, previous_fs; //fieldsets
+				var opacity;
+				var current = 1;
+				var steps = $("fieldset").length;
+
+				setProgressBar(current);
+
+				$(".next").click(function () {
+					current_fs = $(this).parent();
+					next_fs = $(this).parent().next();
+
+					//Add Class Active
+					$("#progressbar li")
+						.eq($("fieldset").index(next_fs))
+						.addClass("active");
+
+					//show the next fieldset
+					next_fs.show();
+					//hide the current fieldset with style
+					current_fs.animate(
+						{ opacity: 0 },
+						{
+							step: function (now) {
+								// for making fielset appear animation
+								opacity = 1 - now;
+
+								current_fs.css({
+									display: "none",
+									position: "relative",
+								});
+								next_fs.css({ opacity: opacity });
+							},
+							duration: 500,
+						}
+					);
+					setProgressBar(++current);
+				});
+
+				$(".previous").click(function () {
+					current_fs = $(this).parent();
+					previous_fs = $(this).parent().prev();
+
+					//Remove class active
+					$("#progressbar li")
+						.eq($("fieldset").index(current_fs))
+						.removeClass("active");
+
+					//show the previous fieldset
+					previous_fs.show();
+
+					//hide the current fieldset with style
+					current_fs.animate(
+						{ opacity: 0 },
+						{
+							step: function (now) {
+								// for making fielset appear animation
+								opacity = 1 - now;
+
+								current_fs.css({
+									display: "none",
+									position: "relative",
+								});
+								previous_fs.css({ opacity: opacity });
+							},
+							duration: 500,
+						}
+					);
+					setProgressBar(--current);
+				});
+
+				function setProgressBar(curStep) {
+					var percent = parseFloat(100 / steps) * curStep;
+					percent = percent.toFixed();
+					$(".progress-bar").css("width", percent + "%");
+				}
+
+				$(".submit").click(function () {
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./scss/bootstrap.min.css" />
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="./css/font-awesome.min.css" />
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./css/style_inscription.css" />
+
+		<title>OnzeProd</title>
+	</head>
+
+	<body class="bg-dark">
+		<!-- Navbar-->
+		<header class="header">
+			<nav class="navbar navbar-expand-lg navbar-dark py-3">
+				<div class="container">
+					<!-- Navbar Brand -->
+					<a
+						href="./index.html"
+						class="btn-hover-effect btn-hover-effect--effect-5 fw-bold border border-2 border-danger"
+						title="Revenir"
+						>Revenir</a
+					>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="row py-5 mt-4 align-items-center">
+				<!-- For Demo Purpose -->
+				<div class="col-md-5 pe-lg-5 mb-5 mb-md-0">
+					<img
+						src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg"
+						alt=""
+						class="img-fluid mb-3 d-none d-md-block"
+					/>
+					<h1>Create an Account</h1>
+					<p class="fst-italic text-muted mb-0">
+						Create a minimal registeration page using Bootstrap 4
+						HTML form elements.
+					</p>
+					<p class="fst-italic text-muted">
+						Snippet By
+						<a href="https://bootstrapious.com" class="text-muted">
+							<u>Bootstrapious</u></a
+						>
+					</p>
+				</div>
+
+				<!-- Inscription Form -->
+				<div class="col-md-7 col-lg-6 ms-auto">
+					<form action="#">
+						<div class="container-fluid">
+							<div class="row">
+								<!-- Nom -->
+								<div class="input-group col-lg mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i class="fa fa-user text-muted"></i>
+									</span>
+
+									<input
+										id="firstName"
+										type="text"
+										name="firstname"
+										placeholder="Nom"
+										class="form-control bg-white border-start-0 border-md"
+									/>
+								</div>
+
+								<!-- Prénom(s) -->
+								<div class="input-group col-lg mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i class="fa fa-user text-muted"></i>
+									</span>
+
+									<input
+										id="lastName"
+										type="text"
+										name="lastname"
+										placeholder="Prénom(s)"
+										class="form-control bg-white border-start-0 border-md"
+									/>
+								</div>
+
+								<!-- Adresse E-mail -->
+								<div class="input-group col-lg-12 mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i
+											class="fa fa-envelope text-muted"
+										></i>
+									</span>
+									<input
+										id="email"
+										type="email"
+										name="email"
+										placeholder="Adresse E-mail"
+										class="form-control bg-white border-start-0 border-md"
+									/>
+								</div>
+
+								<!-- Numéro de téléphone -->
+								<div class="input-group col-lg-12 mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i
+											class="fa fa-phone-square text-muted"
+										></i>
+									</span>
+									<select
+										id="countryCode"
+										name="countryCode"
+										style="max-width: 80px"
+										class="custom-select form-control bg-white border-start-0 border-md h-100 fw-bold text-muted"
+									>
+										<option value="">+225</option>
+									</select>
+									<input
+										id="phoneNumber"
+										type="tel"
+										name="phone"
+										placeholder="Numéro de téléphone"
+										class="form-control bg-white border-md border-start-0 ps-3"
+									/>
+								</div>
+
+								<!-- Job -->
+								<div class="input-group col-lg-12 mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i
+											class="fa fa-black-tie text-muted"
+										></i>
+									</span>
+									<select
+										id="job"
+										name="jobtitle"
+										class="form-control custom-select bg-white border-start-0 border-md"
+									>
+										<option value=""></option>
+										<option value="">
+											Artiste chanteur
+										</option>
+										<option value="">Beatmaker</option>
+										<option value="">
+											Artiste chanteur/Beatmaker
+										</option>
+									</select>
+								</div>
+
+								<!-- Password -->
+								<div class="input-group col-lg-6 mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i class="fa fa-lock text-muted"></i>
+									</span>
+									<input
+										id="password"
+										type="password"
+										name="password"
+										placeholder="Mot de passe"
+										class="form-control bg-white border-start-0 border-md"
+									/>
+								</div>
+
+								<!-- Password Confirmation -->
+								<div class="input-group col-lg-6 mb-4">
+									<span
+										class="input-group-text bg-white px-4 border-md border-end-0"
+									>
+										<i class="fa fa-lock text-muted"></i>
+									</span>
+									<input
+										id="passwordConfirmation"
+										type="password"
+										name="passwordConfirmation"
+										placeholder="Confirmation de mot de passe"
+										class="form-control bg-white border-start-0 border-md"
+									/>
+								</div>
+
+								<!-- Submit Button -->
+								<div
+									class="form-group col-lg-8 mt-3 mx-auto mb-0"
+								>
+									<a
+										href="#"
+										class="btn btn-danger w-100 py-2 mb-2"
+									>
+										<span class="fw-bold"
+											>Créer votre compte</span
+										>
+									</a>
+								</div>
+
+								<!-- Already Registered -->
+								<div class="text-center w-100">
+									<p class="text-muted fw-bold">
+										Vous possedez déjà un compte ?
+										<a
+											href="./connexion.html"
+											class="text-danger ms-2"
+											>Se connecter</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<!-- JQuerry -->
+		<script src="./js/jquery-3.6.0.min.js"></script>
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<!-- Mes scripts -->
+		<script>
+			// For Demo Purpose [Changing input group text on focus]
+			$(function () {
+				$("input, select").on("focus", function () {
+					$(this).parent().children().css("border-color", "#80bdff");
+				});
+				$("input, select").on("blur", function () {
+					$(this).parent().children().css("border-color", "#ced4da");
+				});
+			});
+		</script>
+	</body>
+</html>
